@@ -1,0 +1,95 @@
+/* Navigation */
+#navbar { 
+    flex-direction: column; 
+}
+#navbar ul li a { 
+    font-size: 1rem;
+    padding: 0px 7px;
+}
+
+/* Home */
+#home { 
+    height: 370px; 
+    padding: 1px 5%; /* use percentage, avoids overflow */
+    box-sizing: border-box;
+} 
+#home::before { 
+    height: 400px;
+} 
+#home p { 
+    font-size: 13px;
+}
+
+/* Services section */
+#services { 
+   flex-direction: column;
+} 
+.box { 
+    width: 100%;
+    max-width: 100%; /* ensure no overflow */
+    height: 400px;
+    margin: 5px auto; /* center and prevent overflow */
+    box-sizing: border-box;
+} 
+.box p { 
+    font-size: 1.5rem;
+}
+
+/* Clients section */
+.clients {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+.cliitem { 
+    padding: 10px;
+}
+.cliitem img {
+    width: 60px;
+    max-width: 100%;
+    padding: 5px;
+}
+
+/* Contact section */ 
+#contact { 
+    padding: 20px;
+} 
+#contact-box {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+#contact-box form {
+    width: 100%;
+    max-width: 500px;
+}
+#contact-box form label {
+    font-size: 1rem;
+    font-weight: bold;
+}  
+#contact-box input,
+#contact-box textarea {
+    font-size: 0.9rem;
+    font-weight: bold; 
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Utility Classes */ 
+.h1-primary { 
+    font-size: 40px;
+}  
+
+/* Prevent horizontal scroll */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
